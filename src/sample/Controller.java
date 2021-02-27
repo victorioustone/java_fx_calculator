@@ -46,7 +46,10 @@ public class Controller {
     private Button one;
 
     @FXML
-    private TextField field;
+    private TextField fieldInput;
+
+    @FXML
+    private TextField fieldOutput;
 
     @FXML
     private Button plus;
@@ -65,58 +68,58 @@ public class Controller {
 
     @FXML
     public void setBtnOne() {
-        field.appendText("1");
+        fieldInput.appendText("1");
 
     }
 
     public void setBtnTwo() {
-        field.appendText("2");
+        fieldInput.appendText("2");
     }
 
     public void setBtnThree() {
-        field.appendText("3");
+        fieldInput.appendText("3");
     }
 
     public void setBtnFour() {
-        field.appendText("4");
+        fieldInput.appendText("4");
     }
 
     public void setBtnFive() {
-        field.appendText("5");
+        fieldInput.appendText("5");
     }
 
     public void setBtnSix() {
-        field.appendText("6");
+        fieldInput.appendText("6");
     }
 
     public void setBtnSeven() {
-        field.appendText("7");
+        fieldInput.appendText("7");
     }
 
     public void setBtnEight() {
-        field.appendText("8");
+        fieldInput.appendText("8");
     }
 
-    public void setBtnNine() { field.appendText("9"); }
+    public void setBtnNine() { fieldInput.appendText("9"); }
 
     public void setBtnPlus() {
-        field.appendText("+");
+        fieldInput.appendText(" + ");
     }
 
     public void setBtnMinus() {
-        field.appendText("-");
+        fieldInput.appendText(" - ");
     }
 
     public void setBtnClear() {
-        field.clear();
+        fieldInput.clear();
+        fieldOutput.clear();
     }
 
     public void setBtnEquals() throws ScriptException {
         ScriptEngineManager manager = new ScriptEngineManager();
         ScriptEngine engine = manager.getEngineByName("js");
-        Object result = engine.eval(field.getText());
-        field.clear();
-        field.appendText(result.toString());
+        Object result = engine.eval(fieldInput.getText());
+        fieldOutput.appendText(result.toString());
 
     }
 
