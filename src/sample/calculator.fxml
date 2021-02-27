@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane layoutX="22.0" layoutY="140.0" prefHeight="288.0" prefWidth="256.0" style="-fx-background-color: #042059;">
+         <children>
+            <Button fx:id="nine" layoutX="178.0" layoutY="143.0" mnemonicParsing="false" onAction="#setBtnNine" prefHeight="40.0" prefWidth="40.0" text="9">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="eight" layoutX="109.0" layoutY="143.0" mnemonicParsing="false" onAction="#setBtnEight" prefHeight="40.0" prefWidth="40.0" text="8">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="seven" layoutX="41.0" layoutY="143.0" mnemonicParsing="false" onAction="#setBtnSeven" prefHeight="40.0" prefWidth="40.0" text="7">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="six" layoutX="178.0" layoutY="82.0" mnemonicParsing="false" onAction="#setBtnSix" prefHeight="40.0" prefWidth="40.0" text="6">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="five" layoutX="109.0" layoutY="82.0" mnemonicParsing="false" onAction="#setBtnFive" prefHeight="40.0" prefWidth="40.0" text="5">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="four" layoutX="41.0" layoutY="82.0" mnemonicParsing="false" onAction="#setBtnFour" prefHeight="40.0" prefWidth="40.0" text="4">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="three" layoutX="177.0" layoutY="21.0" mnemonicParsing="false" onAction="#setBtnThree" prefHeight="40.0" prefWidth="40.0" text="3">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="two" layoutX="108.0" layoutY="21.0" mnemonicParsing="false" onAction="#setBtnTwo" prefHeight="40.0" prefWidth="40.0" text="2">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="one" layoutX="40.0" layoutY="21.0" mnemonicParsing="false" onAction="#setBtnOne" prefHeight="40.0" prefWidth="40.0" text="1">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font></Button>
+            <Button fx:id="plus" layoutX="40.0" layoutY="220.0" mnemonicParsing="false" onAction="#setBtnPlus" prefHeight="40.0" prefWidth="32.0" text="+">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="minux" layoutX="88.0" layoutY="220.0" mnemonicParsing="false" onAction="#setBtnMinus" prefHeight="40.0" prefWidth="32.0" text="-">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="equals" layoutX="185.0" layoutY="220.0" mnemonicParsing="false" onAction="#setBtnEquals" prefHeight="40.0" prefWidth="32.0" text="=">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="clear" layoutX="137.0" layoutY="220.0" mnemonicParsing="false" onAction="#setBtnClear" prefHeight="40.0" prefWidth="32.0" text="c">
+               <font>
+                  <Font name="Impact" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TextField fx:id="field" layoutX="22.0" layoutY="78.0" prefHeight="40.0" prefWidth="256.0">
+         <font>
+            <Font name="Impact" size="24.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
